@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mord scroller</title>
+	<style>
+		html{
+			margin:0px;
+			height:100%;
+		}
+		body{
+			background: #0E0A11;
+			margin:1px;
+			height:100%;
+			overflow-x:hidden;
+		}
+		@font-face{
+			font-family:"gibsonLight";
+			src:url("https://www.dr.dk/assets/fonts/gibson/light/gibson-light-webfont.woff2") format("woff2"),
+			url("https://www.dr.dk/assets/fonts/gibson/light/gibson-light-webfont.woff") format("woff");
+			font-weight:normal;
+		}
+		@font-face{
+			font-family:"gibsonRegular";
+			src:url("https://www.dr.dk/assets/fonts/gibson/regular/gibson-regular-webfont.woff2") format("woff2"),
+			url("https://www.dr.dk/assets/fonts/gibson/regular/gibson-regular-webfont.woff") format("woff");
+			font-weight:normal;
+		}
+		@font-face{
+			font-family:"gibsonSemiBold";
+			src:url("https://www.dr.dk/assets/fonts/gibson/semiBold/gibson-semiBold-webfont.woff2") format("woff2"),
+			url("https://www.dr.dk/assets/fonts/gibson/semiBold/gibson-semiBold-webfont.woff") format("woff");
+			font-weight:normal;
+		}
+		@font-face{
+			font-family:"gibsonBold";
+			src:url("https://www.dr.dk/assets/fonts/gibson/bold/gibson-bold-webfont.woff2") format("woff2"),
+			url("https://www.dr.dk/assets/fonts/gibson/bold/gibson-bold-webfont.woff") format("woff");
+			font-weight:normal;
+		}
+		
+	</style>
+	
+	
+	<!-- inject:js -->
+	<!-- endinject -->
+	
+</head>
+<body>
+	
+	<div id="outerContainer" data-contentname="Mord">
+		<div id="image-container"></div>
+		<div id="videoScrollContainer">
+			<div id="scenes"></div>
+		</div>
+	</div>
+	
+</body>
+</html>

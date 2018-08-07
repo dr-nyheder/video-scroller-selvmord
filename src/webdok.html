@@ -1,0 +1,29 @@
+<style>
+	#outerContainer{
+		padding-right:17px;
+		box-sizing: content-box;
+		background-color: #000000;
+		position:relative;
+		height:56.25vw;
+		width:100%;
+		overflow-y:scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+	@media only screen and (max-width: 500px) {
+		#outerContainer{
+			height:calc(177vw - 25px);
+		}
+	}    
+</style>
+<div id="outerContainer" data-contentname="Mord">
+	<div id="image-container"></div>
+	<div id="videoScrollContainer">
+		<div id="scenes"></div>
+	</div>
+</div>
+<script>
+	var scr = document.createElement('script');
+	scr.src = 'https://www.dr.dk/tjenester/netdoks/Holmbladsgaderuten/video-scroller-mord/drn-main.bundle.js';
+	document.getElementsByTagName('head')[0].appendChild(scr);
+	
+</script>
