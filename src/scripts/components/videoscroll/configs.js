@@ -4,19 +4,19 @@ export default class Configs{
 	}
 	static content(){
 		return {
-			'Mord': {
-				frameCount: 1059,
+			'selvmord': {
+				frameCount: 513,
 				frameRate: 15,
 				file: 'mord.json',
 				pathNames:{
-					mobilePath:'mord-mobil/',
-					mobileFileName:'mord-mobil-00000',
-					desktopPath:'mord-desktop/',
-					desktopFileName:'mord-desktop-00000',
-					mobilePathLowres:'mord-mobil-low-res/',
-					mobileFileNameLowres:'mord-mobil-low-res-00000',
-					desktopPathLowres:'mord-desktop-low-res/',
-					desktopFileNameLowres:'mord-desktop-low-res-00000'
+					mobilePath:'selvmord-mobil/',
+					mobileFileName:'selvmord-mobil-00000',
+					desktopPath:'selvmord-desktop/',
+					desktopFileName:'selvmord-desktop-00000',
+					mobilePathLowres:'selvmord-mobil-low/',
+					mobileFileNameLowres:'selvmord-mobil-low-00000',
+					desktopPathLowres:'selvmord-desktop-low/',
+					desktopFileNameLowres:'selvmord-desktop-low-00000'
 				}
 			}
 		}

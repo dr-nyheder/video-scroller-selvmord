@@ -4,7 +4,7 @@ let config = {
     local: {
         DEBUGGING:true,
         ASSETS_PATH:JSON.stringify('assets/'),
-        SCROLL_IMAGE_PATH:JSON.stringify('http://localhost:8888/mobil-web/video-scroller-mord/grafik/images/')
+        SCROLL_IMAGE_PATH:JSON.stringify('http://localhost:8888/mobil-web/video-scroller-selvmord/grafik/')
     },
     staging: {
         DEBUGGING:true,
