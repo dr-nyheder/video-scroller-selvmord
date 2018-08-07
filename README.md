@@ -11,3 +11,5 @@ Video scroller baseret på Mord scroller der er baseret på Angela Merkel scroll
 Kør 'npm run builddata' for at hente data fra google sheets.
 
 Kør 'gulp' for at starte en watch af 'src' og debugge på 'http://localhost:8080/webpack-dev-server/index.html'
+
+Kør 'gulp stage' til test på server og 'gulp deploy' for release build, der fjerner logging og kommentarer og minifier scriptet
