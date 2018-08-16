@@ -7,7 +7,7 @@ export default class Configs{
 			'selvmord': {
 				frameCount: 513,
 				frameRate: 15,
-				file: 'mord.json',
+				file: 'selvmord.json',
 				pathNames:{
 					mobilePath:'selvmord-mobil/',
 					mobileFileName:'selvmord-mobil-00000',
