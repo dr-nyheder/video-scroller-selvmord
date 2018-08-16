@@ -8,14 +8,14 @@ let config = {
     },
     staging: {
         DEBUGGING:true,
-        ASSETS_PATH:JSON.stringify('https://www.dr.dk/tjenester/visuel/staging/video-scroller-mord/assets/'),
-        SCROLL_IMAGE_PATH:JSON.stringify('https://www.dr.dk/tjenester/visuel/scroll-video/danmarks-drabeligste-rute/')
+        ASSETS_PATH:JSON.stringify('https://www.dr.dk/tjenester/visuel/staging/video-scroller-selvmord/assets/'),
+        SCROLL_IMAGE_PATH:JSON.stringify('https://www.dr.dk/tjenester/visuel/scroll-video/selvmord/')
         // SCROLL_IMAGE_PATH:JSON.stringify('https://downol.dr.dk/download/nyheder/2018/mord-scroller/images/')
     },
     deploy: {
         DEBUGGING:false,
-        ASSETS_PATH:JSON.stringify('https://www.dr.dk/tjenester/netdoks/Holmbladsgaderuten/video-scroller-mord/assets/'),
-        SCROLL_IMAGE_PATH:JSON.stringify('https://www.dr.dk/tjenester/visuel/scroll-video/danmarks-drabeligste-rute/')
+        ASSETS_PATH:JSON.stringify('https://www.dr.dk/tjenester/netdoks/Holmbladsgaderuten/video-scroller-selvmord/assets/'),
+        SCROLL_IMAGE_PATH:JSON.stringify('https://www.dr.dk/tjenester/visuel/scroll-video/selvmord/')
         // SCROLL_IMAGE_PATH:JSON.stringify('https://downol.dr.dk/download/nyheder/2018/mord-scroller/images/')
     }
 }

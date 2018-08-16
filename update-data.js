@@ -31,7 +31,8 @@ function getCols(entries) {
 
 function getUrl(id) {
     // '1ct4p64KJ2DdLjgP9ElZvzUSDN7meezxMl0FmRns9PpY'
-    return `https://spreadsheets.google.com/feeds/list/110xv_Q_U73BRRirRgzLGBZ_DSUg1h-by0xLDWiG5flc/${id}/public/values?alt=json`; // Mord
+    return `https://spreadsheets.google.com/feeds/list/1iOimOX1mTk1fKpoDVkqQV1bYlnAzo7vWvjqu5XxNGUg/${id}/public/values?alt=json`; // Selvmord
+    // return `https://spreadsheets.google.com/feeds/list/110xv_Q_U73BRRirRgzLGBZ_DSUg1h-by0xLDWiG5flc/${id}/public/values?alt=json`; // Mord
     // return `https://spreadsheets.google.com/feeds/list/1ct4p64KJ2DdLjgP9ElZvzUSDN7meezxMl0FmRns9PpY/${id}/public/values?alt=json`; // Merkel
     // return `https://spreadsheets.google.com/feeds/list/1cbOAaynPjMFanNGc3du-SnztRXqewE7QZksFdReLQew/${id}/public/values?alt=json`;
 }

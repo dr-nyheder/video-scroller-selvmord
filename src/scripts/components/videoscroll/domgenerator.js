@@ -43,15 +43,13 @@ export default class DomGenerator {
             extraClass = ' large-scene'
         }
         const arrow = (sceneObject.type === 'Header') ? `<p class="arrow">${scrollarrow()}</p>` : ``;
-        const icon = (sceneObject.picture !== '') ? `<div class="icon"><img src="${ASSETS_PATH + 'images/'}${sceneObject.picture}"></div>` : ``;
+        // const icon = (sceneObject.picture !== '') ? `<div class="icon"><img src="${ASSETS_PATH + 'images/'}${sceneObject.picture}"></div>` : ``;
         const header = (sceneObject.header !== undefined) ? `<div class="scene-header">${sceneObject.header}</div>` : ``;
-        const address = (sceneObject.address !== undefined) ? `<div class="address">${sceneObject.address}</div>` : ``;
+        // const address = (sceneObject.address !== undefined) ? `<div class="address">${sceneObject.address}</div>` : ``;
 
         const html = `
         <div id="scene-${sceneId}" class="scene${extraClass}" data-time="${sceneObject.time}" data-duration="${sceneObject.duration}">
-            ${icon}
             ${header}
-            ${address}
             <div class="main">${sceneObject.text}</div>
             ${arrow}
         </div>
