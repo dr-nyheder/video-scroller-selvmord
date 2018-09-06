@@ -3,8 +3,10 @@ let config = {
     deployFolder:'/Volumes/netdoks/selvmord/',
     local: {
         DEBUGGING:true,
-        ASSETS_PATH:JSON.stringify('assets/'),
-        SCROLL_IMAGE_PATH:JSON.stringify('http://localhost:8888/mobil-web/video-scroller-selvmord/grafik/')
+        //ASSETS_PATH:JSON.stringify('assets/'),
+        ASSETS_PATH:JSON.stringify('https://www.dr.dk/tjenester/visuel/staging/video-scroller-selvmord/assets/'),
+        //SCROLL_IMAGE_PATH:JSON.stringify('http://localhost:8888/mobil-web/video-scroller-selvmord/grafik/')
+        SCROLL_IMAGE_PATH:JSON.stringify('https://www.dr.dk/tjenester/visuel/scroll-video/selvmord/')
     },
     staging: {
         DEBUGGING:true,

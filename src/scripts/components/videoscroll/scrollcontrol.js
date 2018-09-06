@@ -65,9 +65,9 @@ export default class ScrollControl{
 
 			if(e.progress<fadeInStop) opacity = normalize(e.progress, 0, fadeInStop);
 			if(e.progress>fadeOutStart) opacity = normalize(e.progress, 1, fadeOutStart);
-			
-			el.style.transform = 'translateY('+-position+'vw)';
-			el.style.opacity = opacity.toFixed(3);
+
+			//el.style.transform = 'translateY('+-position+'vw)';
+			//el.style.opacity = opacity.toFixed(3);
 
 		}
 
@@ -75,7 +75,7 @@ export default class ScrollControl{
 		let counter = new ScrollMagic.Scene({
 			duration: this.scrollduration
 		}).addTo(controller);
-		
+
 		counter.on('update', (ev) => {
 			this.setTime(ev.scrollPos);
 			if(scrollTimeout !== null) {

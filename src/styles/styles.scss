@@ -25,7 +25,7 @@ $mobile-query:'only screen and (max-width: 500px)';
   -webkit-overflow-scrolling: touch;
   @media  #{$mobile-query} {
     height:calc(177vw - 25px);
-  }    
+  }
 }
 .grabber-left{
   position: absolute;
@@ -102,23 +102,23 @@ $mobile-query:'only screen and (max-width: 500px)';
 }
 
 #scenes {
-  width: 100%;
+  /*width: 100%;
   height:100%;
   max-height: calc(56.25vw - 10px);
-  overflow-y:hidden; 
+  overflow-y:hidden;
   position: fixed;
-  pointer-events: none;
+  pointer-events: none;*/
   opacity: 1 !important;
   @media  #{$mobile-query} {
-    max-height: calc(177vw - 25px);
+    //max-height: calc(177vw - 25px);
   }
 }
 .scene {
-  background:rgba(0, 0, 0, 0.6);
+  //background:rgba(0, 0, 0, 0.6);
   width: 70%;
-  opacity: 0;
+  //opacity: 0;
   //height:10%;
-  position: absolute;
+  position: relative;
   text-align: center;
   //bottom: -25px;
   padding: 3% 2% 3.5% 2%;
@@ -127,14 +127,14 @@ $mobile-query:'only screen and (max-width: 500px)';
   // left:10%;
   font-family: gibsonRegular;
   box-sizing:border-box;
-  
+
   @media #{$mobile-query} {
     padding: 7% 7% 7% 7%;
     margin: 0 5%;
     width:90%;
-    left:0%;  
+    left:0%;
     bottom: 2.5vh;
-  }      
+  }
   .icon{
     margin:0 auto 1.2em auto;
     width:8%;
@@ -187,7 +187,7 @@ $mobile-query:'only screen and (max-width: 500px)';
       text-decoration: underline;
     }
   }
-  
+
   &.large-scene{
     .main{
       font-size: 5vw;
@@ -197,19 +197,19 @@ $mobile-query:'only screen and (max-width: 500px)';
       }
     }
   }
-  
+
   &.header-scene{
     font-family: gibsonRegular;
     width:80%;
     text-align: center;
-    bottom: 5vw;
+    //bottom: 5vw;
     margin:0 10%;
-    
-    
+
+
     @media #{$mobile-query} {
       width:90%;
       margin:0 5%;
-      bottom:10vw;
+      //bottom:10vw;
     }
     .icon{
       width:8%;
@@ -221,11 +221,11 @@ $mobile-query:'only screen and (max-width: 500px)';
       color: $addressColor;
       font-size: 1.5vw;
       padding: 0 7%;
-      
+
       large{
         color:white;
         // text-transform:uppercase;
-        font-family: gibsonSemibold; 
+        font-family: gibsonSemibold;
         display: block;
         margin:0 0 0.2em 0;
         font-size: 5vw;
@@ -237,11 +237,11 @@ $mobile-query:'only screen and (max-width: 500px)';
         large{
           margin:0 0 0.7em 0;
           font-size: 10vw;
-          
+
         }
 
       }
-      
+
     }
   }
   .arrow{

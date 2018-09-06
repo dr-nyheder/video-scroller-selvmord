@@ -76,7 +76,7 @@ function ready(){
      setTimeout(function() {
         getVideo();
     }, 100)
-}   
+}
 
 if (document.readyState == 'loading') {
   document.addEventListener('DOMContentLoaded', ready);
