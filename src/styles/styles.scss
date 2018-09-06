@@ -1,5 +1,5 @@
 $loaderColor:rgba(255, 71, 71, 0.7);
-$headerColor:#d01403;
+$headerColor:#fff;
 $addressColor:#FFC8C8;
 $textColor:#FFFFFF;
 $mobile-query:'only screen and (max-width: 500px)';
@@ -19,13 +19,10 @@ $mobile-query:'only screen and (max-width: 500px)';
   box-sizing: content-box;
   background-color: #000000;
   position:relative;
-  height:56.25vw;
-  width:100%;
+  height: 100vh;
+  width:100vw;
   overflow-y:scroll;
   -webkit-overflow-scrolling: touch;
-  @media  #{$mobile-query} {
-    height:calc(177vw - 25px);
-  }
 }
 .grabber-left{
   position: absolute;
@@ -53,7 +50,10 @@ $mobile-query:'only screen and (max-width: 500px)';
   position:fixed;
   pointer-events: none;
   img {
-    width:100%;
+    width: auto;
+    height: 100vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
   @media #{$mobile-query} {
     img {
@@ -122,15 +122,17 @@ $mobile-query:'only screen and (max-width: 500px)';
   text-align: center;
   //bottom: -25px;
   padding: 3% 2% 3.5% 2%;
-  margin: 0 15%;
-  bottom: -10vh;
+  margin: 0 15% 10vh;
+
   // left:10%;
+  min-height: 100vh;
+
   font-family: gibsonRegular;
   box-sizing:border-box;
 
   @media #{$mobile-query} {
     padding: 7% 7% 7% 7%;
-    margin: 0 5%;
+    margin: 0 5% 10vh;
     width:90%;
     left:0%;
     bottom: 2.5vh;
@@ -146,7 +148,7 @@ $mobile-query:'only screen and (max-width: 500px)';
     }
   }
   .scene-header{
-    font-family: gibsonSemibold;
+    font-family: gibsonLight;
     // text-transform: uppercase;
     // white-space: nowrap;
     color: $headerColor;
@@ -204,12 +206,35 @@ $mobile-query:'only screen and (max-width: 500px)';
     text-align: center;
     //bottom: 5vw;
     margin:0 10%;
-
-
+    //margin-top: 50vh;
+    min-height: 100vh;
+    padding-top: 0px;
+    h1 {
+      text-transform: uppercase;
+      font-family: gibsonLight;
+      letter-spacing: 34px;
+      font-size: 7vw;
+      margin-top: calc(10px + 1.2vw);
+    }
+    h2 {
+      font-size: calc(10px + 1.2vw);
+    }
     @media #{$mobile-query} {
-      width:90%;
-      margin:0 5%;
+      width:100%;
+      margin:0;
+      //margin-top: 50vh;
       //bottom:10vw;
+      h1 {
+        text-transform: uppercase;
+        font-family: gibsonLight;
+        letter-spacing: 10px;
+        font-size: 14vw;
+        margin-top: calc(10px + 1.2vw);
+      }
+      h2 {
+        margin-top: 40px;
+        font-size: calc(10px + 1.2vw);
+      }
     }
     .icon{
       width:8%;
@@ -245,13 +270,16 @@ $mobile-query:'only screen and (max-width: 500px)';
     }
   }
   .arrow{
-    margin:2% 0 0 0;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
     svg{
       width:2.5vw;
       height:3vw;
     }
     @media #{$mobile-query} {
-      margin:6% 0 0 0;
+
       svg{
         width:8vw;
         height:10vw;

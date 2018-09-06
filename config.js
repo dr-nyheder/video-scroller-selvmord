@@ -2,7 +2,7 @@ let config = {
     stagingFolder:'/Volumes/staging/',
     deployFolder:'/Volumes/netdoks/selvmord/',
     local: {
-        DEBUGGING:true,
+        DEBUGGING:false,
         //ASSETS_PATH:JSON.stringify('assets/'),
         ASSETS_PATH:JSON.stringify('https://www.dr.dk/tjenester/visuel/staging/video-scroller-selvmord/assets/'),
         //SCROLL_IMAGE_PATH:JSON.stringify('http://localhost:8888/mobil-web/video-scroller-selvmord/grafik/')
